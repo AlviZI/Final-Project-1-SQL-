@@ -15,8 +15,7 @@ CREATE TABLE city (
   longitude DECIMAL NOT NULL
 );
 
----------------------------------------------- Import CSV Kedalam Tabel --------------------------------------------------------------
+------ Import
 COPY car_product 
-FROM 'C:/Users/ALVI ZAHRAN/OneDrive/Documents/Pacmann Final Project 1/car_product.csv' 
-DELIMITER ',' 
-CSV HEADER;
+FROM 'C:\Users\lenovo\Documents\GitHub\Final-Project-1-SQL-\Pacmann Final Project 1 (SQL)\Dummy Data\car_product.csv' 
+DELIMITER ',' CSV HEADER;
