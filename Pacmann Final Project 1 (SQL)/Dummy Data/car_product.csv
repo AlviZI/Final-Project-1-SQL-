@@ -1,50 +1,50 @@
-product_id,brand,model,body_type,year,price
-5,Chevrolet,1500 Quad Cab,Pickup,2014,89184
-6,Nissan,Edge,Sedan,2016,49547
-13,Ford,M2,Sedan,1999,47152
-6,Mercury,Tundra Regular Cab,SUV,2005,84944
-13,Chevrolet,A4,Hatchback,2002,40068
-12,Chevrolet,LeSabre,"Coupe, Convertible",1999,95394
-13,Toyota,Patriot,Pickup,1995,92727
-12,Nissan,Sprinter 2500 Cargo,Van/Minivan,2009,36578
-8,Ram,Routan,Sedan,2001,92882
-6,Mercedes-Benz,F350 Regular Cab,SUV,2009,91080
-3,Chevrolet,Tiburon,Coupe,2013,57301
-4,Mitsubishi,M-Class,Sedan,2010,59593
-9,Chrysler,Frontier King Cab,Pickup,1993,62889
-8,Ford,MPV,Van/Minivan,1995,60086
-4,Toyota,Rogue,Wagon,2005,46904
-7,Lexus,Elise,Sedan,2017,3952
-11,Toyota,XK,Pickup,2005,6491
-5,GMC,Caravan Passenger,SUV,1999,4043
-9,Cadillac,Durango,Sedan,2003,24148
-14,Mitsubishi,Taycan,"Sedan, Hatchback, Wagon",2015,30690
-13,Cadillac,Taurus,Sedan,1996,17103
-10,Pontiac,Silverado 3500 HD Regular Cab,SUV,2005,69557
-3,BMW,350Z,Pickup,2010,24108
-11,Toyota,Quest,Sedan,2018,95544
-14,Lexus,F350 Regular Cab,SUV,1997,37594
-14,Porsche,Raider Extended Cab,Sedan,1995,37177
-3,Ford,Impreza,SUV,2001,63538
-9,BMW,Altima,Coupe,2003,64334
-2,Honda,Ranger Regular Cab,SUV,2018,12865
-1,Porsche,Dakota Club Cab,Sedan,2002,37630
-4,Chevrolet,XTS,SUV,2001,47479
-10,Porsche,740,"Coupe, Convertible",2006,7274
-2,Kia,Blackwood,Pickup,1996,51913
-7,Chevrolet,Paseo,Pickup,2019,30411
-10,Porsche,Savana 3500 Passenger,SUV,2018,65901
-4,Acura,A4,"Sedan, Coupe, Convertible",2019,53950
-4,Mercedes-Benz,Pathfinder,"Sedan, Wagon",2018,80562
-14,Saab,Baja,SUV,2016,70259
-3,Chevrolet,S10 Extended Cab,"Sedan, Coupe",2004,64285
-2,Ford,Soul EV,Pickup,1997,57792
-7,Mercedes-Benz,Metris WORKER Cargo,Hatchback,2011,25296
-9,GMC,Navigator,SUV,2006,15966
-9,Acura,CT6-V,Convertible,2003,90640
-11,Ford,XC70,SUV,2010,14768
-9,Toyota,Monterey,Pickup,2002,78317
-13,Chevrolet,Q5,Van/Minivan,2014,55608
-11,Volvo,Enclave,SUV,2017,24987
-12,Suzuki,Intrepid,Sedan,2011,20214
-11,Lexus,Charger,Hatchback,1996,22982
+"product_id","brand","model","body_type","year","price"
+"1","Chevrolet","1500 Quad Cab","Pickup","2014","89184"
+"2","Nissan","Edge","Sedan","2016","49547"
+"3","Ford","M2","Sedan","1999","47152"
+"4","Mercury","Tundra Regular Cab","SUV","2005","84944"
+"5","Chevrolet","A4","Hatchback","2002","40068"
+"6","Chevrolet","LeSabre","Coupe, Convertible","1999","95394"
+"7","Toyota","Patriot","Pickup","1995","92727"
+"8","Nissan","Sprinter 2500 Cargo","Van/Minivan","2009","36578"
+"9","Ram","Routan","Sedan","2001","92882"
+"10","Mercedes-Benz","F350 Regular Cab","SUV","2009","91080"
+"11","Chevrolet","Tiburon","Coupe","2013","57301"
+"12","Mitsubishi","M-Class","Sedan","2010","59593"
+"13","Chrysler","Frontier King Cab","Pickup","1993","62889"
+"14","Ford","MPV","Van/Minivan","1995","60086"
+"15","Toyota","Rogue","Wagon","2005","46904"
+"16","Lexus","Elise","Sedan","2017","3952"
+"17","Toyota","XK","Pickup","2005","6491"
+"18","GMC","Caravan Passenger","SUV","1999","4043"
+"19","Cadillac","Durango","Sedan","2003","24148"
+"20","Mitsubishi","Taycan","Sedan, Hatchback, Wagon","2015","30690"
+"21","Cadillac","Taurus","Sedan","1996","17103"
+"22","Pontiac","Silverado 3500 HD Regular Cab","SUV","2005","69557"
+"23","BMW","350Z","Pickup","2010","24108"
+"24","Toyota","Quest","Sedan","2018","95544"
+"25","Lexus","F350 Regular Cab","SUV","1997","37594"
+"26","Porsche","Raider Extended Cab","Sedan","1995","37177"
+"27","Ford","Impreza","SUV","2001","63538"
+"28","BMW","Altima","Coupe","2003","64334"
+"29","Honda","Ranger Regular Cab","SUV","2018","12865"
+"30","Porsche","Dakota Club Cab","Sedan","2002","37630"
+"31","Chevrolet","XTS","SUV","2001","47479"
+"32","Porsche","740","Coupe, Convertible","2006","7274"
+"33","Kia","Blackwood","Pickup","1996","51913"
+"34","Chevrolet","Paseo","Pickup","2019","30411"
+"35","Porsche","Savana 3500 Passenger","SUV","2018","65901"
+"36","Acura","A4","Sedan, Coupe, Convertible","2019","53950"
+"37","Mercedes-Benz","Pathfinder","Sedan, Wagon","2018","80562"
+"38","Saab","Baja","SUV","2016","70259"
+"39","Chevrolet","S10 Extended Cab","Sedan, Coupe","2004","64285"
+"40","Ford","Soul EV","Pickup","1997","57792"
+"41","Mercedes-Benz","Metris WORKER Cargo","Hatchback","2011","25296"
+"42","GMC","Navigator","SUV","2006","15966"
+"43","Acura","CT6-V","Convertible","2003","90640"
+"44","Ford","XC70","SUV","2010","14768"
+"45","Toyota","Monterey","Pickup","2002","78317"
+"46","Chevrolet","Q5","Van/Minivan","2014","55608"
+"47","Volvo","Enclave","SUV","2017","24987"
+"48","Suzuki","Intrepid","Sedan","2011","20214"
+"49","Lexus","Charger","Hatchback","1996","22982"
