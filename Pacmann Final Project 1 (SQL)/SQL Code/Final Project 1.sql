@@ -21,7 +21,7 @@ CREATE TABLE public.city
   CONSTRAINT city_kota_id_key UNIQUE (kota_id)
 );
 
-CREATE TABLE public.user
+CREATE TABLE public.buyer
 (
     user_id integer NOT NULL,
     nama character varying COLLATE pg_catalog."default" NOT NULL,
@@ -30,13 +30,33 @@ CREATE TABLE public.user
     CONSTRAINT user_pkey PRIMARY KEY (user_id)
 );
 
----------------------------------------------- Langkah 3 ------------------------------------------------------
-SELECT * FROM car_product;
+CREATE TABLE public.seller
+(
+    seller_id integer NOT NULL,
+    nama_seller character varying NOT NULL,
+    kontak character varying NOT NULL,
+    domisili character varying NOT NULL,
+    PRIMARY KEY (seller_id)
+);
 
+---------------------------------------------- Langkah 4 ------------------------------------------------------
+SELECT * FROM car_product;
+SELECT * FROM seller;
+SELECT * FROM user;
+
+-- Case 1
 SELECT *
 FROM car_product
 WHERE year >= 2015;
 
+-- Case 3
+SELECT nama_seller,brand,domisili
+FROM seller
+JOIN car_product
+ON seller.seller_id = car_product.product_id
+WHERE nama_seller LIKE '%Novi%';
+
+-- Case 4
 SELECT *
 FROM car_product
 WHERE year <= 2015 AND brand ILIKE '%Chevrolet%'
@@ -44,9 +64,14 @@ ORDER BY price ASC
 LIMIT 2;
 
 SELECT *
-FROM car_product  cp
-JOIN city c ON cp.city_id = c.kota_id
-WHERE cp.year <= 2015
-  AND c.kota_id = 12 
-ORDER BY SQRT(POWER(cp.latitude - c.latitude, 2) + POWER(cp.longitude - c.longitude, 2))
-LIMIT 1;
+FROM seller
+JOIN buyer
+ON ;
+
+------------------------------------------------------- Langkah 5 ----------------------------------------------------------
+-- Case 2
+SELECT city.nama_kota, ROUND(AVG(car_product.price), 0) AS rata_harga
+FROM car_product
+JOIN city ON car_product.product_id = city.kota_id
+GROUP BY city.nama_kota;
+
