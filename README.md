@@ -13,3 +13,11 @@ Langkah Kedua
 - Mencari data mobil brand "Toyota"
 - Melihat jumlah brand mobil yang tersedia
 - Membandingkan harga mobil berdasarkan harga rata-rata per kota
+
+
+# Langkah Kedua
+
+Mencari data mobil keluaran diatas 2015
+SELECT *
+FROM car_product
+WHERE YEAR >= 2015;
