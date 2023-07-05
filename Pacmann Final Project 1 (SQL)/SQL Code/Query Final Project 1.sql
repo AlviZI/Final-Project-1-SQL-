@@ -27,7 +27,8 @@ WHERE brand LIKE 'Toyota';
 SELECT brand, COUNT(*) as count
 FROM car_product
 GROUP BY brand
-HAVING COUNT(*) > 1;
+HAVING COUNT(*) > 1 
+ORDER BY count DESC;
 
 -- Case 2
 SELECT city.nama_kota, ROUND(AVG(car_product.price), 0) AS rata_harga
