@@ -15,7 +15,7 @@ Langkah Kedua
 - Membandingkan harga mobil berdasarkan harga rata-rata per kota
 
 
-#Langkah pertama
+# Langkah pertama
 
 1. Membuat dummy data dengan menggunkan python library faker yang berisi data mobil, kota, pembeli dan penjual
 
@@ -27,14 +27,39 @@ Langkah Kedua
    - Install Library Faker
    <img width="278" alt="image" src="https://github.com/AlviZI/Final-Project-1-SQL-/assets/66658329/729a8863-c5af-4fc0-9703-1fc9439c4c1d">
 
-   Kode `pip install Faker` digunakan untuk menginstal pustaka Python bernama Faker. Faker adalah pustaka Python yang digunakan untuk menghasilkan data palsu seperti nama, alamat, nomor telepon, dan lain-lain. Pustaka ini berguna untuk menguji aplikasi atau alat yang memerlukan data palsu. Untuk menggunakan pustaka ini, Anda perlu mengimpor modul `faker` ke dalam kode Python Anda. Setelah itu, Anda dapat menggunakan fungsi-fungsi yang disediakan oleh pustaka ini untuk menghasilkan data palsu yang dibutuhkan. Untuk menginstal pustaka ini, Anda perlu menjalankan kode `pip install Faker` di lingkungan Python Anda, seperti Google Colab. Setelah itu, pustaka Faker akan terinstal dan siap digunakan.
+   Kode `pip install Faker` digunakan untuk menginstal pustaka Python bernama Faker. Faker adalah pustaka Python yang digunakan untuk menghasilkan data palsu seperti nama, alamat, nomor telepon, dan lain-lain. Pustaka ini berguna untuk menguji aplikasi atau alat yang memerlukan data palsu. Untuk menggunakan pustaka ini, Anda perlu mengimpor modul `faker` ke dalam kode Python Anda. Setelah itu, Anda dapat menggunakan fungsi-fungsi yang disediakan oleh pustaka ini untuk menghasilkan data palsu yang dibutuhkan. Untuk menginstal pustaka ini, Anda perlu menjalankan kode `pip install Faker` di lingkungan Python Anda, seperti Google Colab. 
 
-   - Membuat Dummy data car_product
-   <img width="832" alt="image" src="https://github.com/AlviZI/Final-Project-1-SQL-/assets/66658329/18aed068-ad80-4dc0-a6cd-3de23d95a85b">
+   - Membuat Dummy data car_product, city, seller, dan buyer
+   <img width="832" alt="image" src="https://github.com/AlviZI/Final-Project-1-SQL-/assets/66658329/18aed068-ad80-4dc0-a6cd-3de23d95a85b"> <img width="473" alt="image" src="https://github.com/AlviZI/Final-Project-1-SQL-/assets/66658329/24563fa8-61d6-4f01-b793-e22f2c8fa722"> <img width="477" alt="image" src="https://github.com/AlviZI/Final-Project-1-SQL-/assets/66658329/a2b11e48-5c15-4c02-93a0-37107266fcd9"> <img width="485" alt="image" src="https://github.com/AlviZI/Final-Project-1-SQL-/assets/66658329/bc9dc5ce-b090-41b7-bb2b-59e7c248e702">
 
-   Kode tersebut digunakan untuk membuat file CSV yang berisi data mobil palsu menggunakan pustaka Python seperti `csv`, `faker`, `faker_vehicle`, dan `tabulate`. Pertama, kode mengimpor modul `csv`, `Faker`, `VehicleProvider`, dan `tabulate`. Kemudian, kode membuat variabel `headers` yang berisi nama kolom untuk file CSV yang akan dibuat. Selanjutnya, kode membuat variabel `data` yang akan berisi data mobil palsu yang akan ditulis ke dalam file CSV. Data mobil palsu tersebut dibuat menggunakan fungsi-fungsi yang disediakan oleh pustaka `faker_vehicle`. Setelah itu, kode membuka file CSV dengan mode write dan menulis header dan data ke dalam file tersebut menggunakan modul `csv`. Terakhir, kode mencetak data mobil palsu yang telah dibuat dalam bentuk tabel menggunakan modul `tabulate`. Dengan demikian, kode tersebut menghasilkan file CSV yang berisi data mobil palsu dan mencetak data tersebut dalam bentuk tabel.
+   Kode tersebut digunakan untuk membuat file CSV yang berisi data mobil palsu menggunakan pustaka Python seperti `csv`, `faker`, `faker_vehicle`, dan `tabulate`. Pertama, kode mengimpor modul `csv`, `Faker`, `VehicleProvider`, dan `tabulate`. Kemudian, kode membuat variabel `headers` yang berisi nama kolom untuk file CSV yang akan dibuat. Selanjutnya, kode membuat variabel `data` yang akan berisi data mobil palsu yang akan ditulis ke dalam file CSV. Data mobil palsu tersebut dibuat menggunakan fungsi-fungsi yang disediakan oleh pustaka `faker_vehicle`. Setelah itu, kode membuka file CSV dengan mode write dan menulis header dan data ke dalam file tersebut menggunakan modul `csv`. Terakhir, kode mencetak data mobil palsu yang telah dibuat dalam bentuk tabel menggunakan modul `tabulate`.
+   
+1. Mebuat database Final Project dan tabel car_product, city, seller, dan buyer
 
+   - cara membuat database di PostgreSQL menggunakan pgAdmin 4:
 
+      -  Buka aplikasi pgAdmin 4.
+      -  Klik kanan pada PostgreSQL 12 dan pilih Create - Database.
+      -  Akan muncul dialog box untuk membuat database.
+      -  Isi nama database yang ingin dibuat pada kolom "Name".
+      -  Pilih owner database pada kolom "Owner".
+      -  Klik tombol "Save" untuk menyimpan database yang telah dibuat.
+   
+   Setelah itu, database baru akan muncul pada panel di sebelah kiri pgAdmin 4. Selanjutnya, kita dapat membuat tabel pada database tersebut dengan mengklik kanan database yang telah dibuat dan memilih Create - Table. Kemudian, isi nama tabel dan kolom-kolom yang dibutuhkan pada dialog box yang muncul. Setelah itu, tabel baru akan muncul pada panel di sebelah kiri pgAdmin 4.
+
+   - cara membuat table di PostgreSQL menggunakan pgAdmin 4
+      
+      -  Buka aplikasi pgAdmin 4.
+      -  Klik kanan pada database yang ingin digunakan dan pilih Create - Table.
+      -  Akan muncul dialog box untuk membuat tabel.
+      -  Isi nama tabel pada kolom "Name".
+      -  Pada tab "Columns", tambahkan kolom-kolom yang dibutuhkan dengan mengisi nama kolom, tipe data, dan panjang data.
+      -  Pada tab "Constraints", tambahkan constraint yang dibutuhkan seperti primary key, foreign key, dan lain-lain.
+      -  Klik tombol "Save" untuk menyimpan tabel yang telah dibuat.
+      
+   Setelah itu, tabel baru akan muncul pada panel di sebelah kiri pgAdmin 4. Selanjutnya, kita dapat memasukkan data ke dalam tabel tersebut dengan mengklik kanan tabel dan memilih "View/Edit Data". Kemudian, isi data pada dialog box yang muncul.
+
+   
 # Langkah Kedua
 
 1. Mencari data mobil keluaran diatas 2015
