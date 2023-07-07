@@ -19,6 +19,20 @@ Langkah Kedua
 
 1. Membuat dummy data dengan menggunkan python library faker yang berisi data mobil, kota, pembeli dan penjual
 
+   - Import Colab
+   <img width="225" alt="image" src="https://github.com/AlviZI/Final-Project-1-SQL-/assets/66658329/48c3dc13-f134-4ef6-80a9-d27c80d57be5">
+
+   Kode `from google.colab import drive` digunakan untuk mengimpor modul `drive` dari pustaka `google.colab`. Kode `drive.mount('/content/drive')` digunakan untuk memasang Google Drive di Google Colab. Ini memungkinkan pengguna untuk mengakses file yang disimpan di akun Google Drive mereka dari dalam notebook Colab. Jalur di mana Google Drive akan dipasang adalah `/content/drive`. Ketika kode dijalankan, itu meminta pengguna untuk memberikan otorisasi Colab untuk mengakses akun Google Drive mereka. Setelah otorisasi selesai, Google Drive dipasang dan dapat diakses seperti sistem file biasa. Pengguna kemudian dapat membaca, menulis, dan memanipulasi file yang disimpan di akun Google Drive mereka dari dalam notebook Colab.
+
+   - Install Library Faker
+   <img width="278" alt="image" src="https://github.com/AlviZI/Final-Project-1-SQL-/assets/66658329/729a8863-c5af-4fc0-9703-1fc9439c4c1d">
+
+   Kode `pip install Faker` digunakan untuk menginstal pustaka Python bernama Faker. Faker adalah pustaka Python yang digunakan untuk menghasilkan data palsu seperti nama, alamat, nomor telepon, dan lain-lain. Pustaka ini berguna untuk menguji aplikasi atau alat yang memerlukan data palsu. Untuk menggunakan pustaka ini, Anda perlu mengimpor modul `faker` ke dalam kode Python Anda. Setelah itu, Anda dapat menggunakan fungsi-fungsi yang disediakan oleh pustaka ini untuk menghasilkan data palsu yang dibutuhkan. Untuk menginstal pustaka ini, Anda perlu menjalankan kode `pip install Faker` di lingkungan Python Anda, seperti Google Colab. Setelah itu, pustaka Faker akan terinstal dan siap digunakan.
+
+   - Membuat Dummy data car_product
+   <img width="832" alt="image" src="https://github.com/AlviZI/Final-Project-1-SQL-/assets/66658329/18aed068-ad80-4dc0-a6cd-3de23d95a85b">
+
+   Kode tersebut digunakan untuk membuat file CSV yang berisi data mobil palsu menggunakan pustaka Python seperti `csv`, `faker`, `faker_vehicle`, dan `tabulate`. Pertama, kode mengimpor modul `csv`, `Faker`, `VehicleProvider`, dan `tabulate`. Kemudian, kode membuat variabel `headers` yang berisi nama kolom untuk file CSV yang akan dibuat. Selanjutnya, kode membuat variabel `data` yang akan berisi data mobil palsu yang akan ditulis ke dalam file CSV. Data mobil palsu tersebut dibuat menggunakan fungsi-fungsi yang disediakan oleh pustaka `faker_vehicle`. Setelah itu, kode membuka file CSV dengan mode write dan menulis header dan data ke dalam file tersebut menggunakan modul `csv`. Terakhir, kode mencetak data mobil palsu yang telah dibuat dalam bentuk tabel menggunakan modul `tabulate`. Dengan demikian, kode tersebut menghasilkan file CSV yang berisi data mobil palsu dan mencetak data tersebut dalam bentuk tabel.
 
 
 # Langkah Kedua
